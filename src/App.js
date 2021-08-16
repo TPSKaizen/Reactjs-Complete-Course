@@ -1,22 +1,13 @@
 import React from 'react'
-import ExpenseItem from './components/ExpenseItem'
-import expenses from './components/expenses'
-
+import ExpensesList from './components/ExpensesList'
 
 function App() {
   return (
     <div>
       <h1> Hello World </h1>
-        {expenses.map((item) => {
-          return <ExpenseItem 
-            key = {item.id}
-            expenseDate = {item.date}
-            expenseTitle = {item.title} 
-            expenseAmount = {item.amount}
-          />
-        })}
+        <ExpensesList />
     </div>
   )
 }
 
-export default App
+export default App;
